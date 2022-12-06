@@ -9,7 +9,7 @@ export interface FlipMoveProps {
 }
 function App() {
     const {numbers, sizePuzzle, swapPuzzle, victory, mixPuzzle, changeHandler} = usePuzzleData()
-    const classGrid = ['grid gap-3', 'grid-cols-' + sizePuzzle ]
+    const classGrid = ['grid gap-3', sizePuzzle === 4 ? 'grid-cols-4' :  'grid-cols-3' ]
     return (
     <div className="App flex flex-col justify-center items-center mt-10">
         <div className='buttons mb-8 flex flex-row'>

@@ -14,7 +14,7 @@ export function OnePuzzle({number, clickPuzzle }:NumberProps) {
         number.top ? 'border-solid border-b-2 border-green-500' : '',
     ].join(' ')
     const numEmpty = number.empty ? 'bg-blue-200' : 'bg-green-200 drop-shadow-cast'
-    const numClass = [numEmpty, activeBtn, 'one-puzzle h-20 w-20 rounded-md flex flex-row justify-center items-center text-4xl']
+    const numClass = ['one-puzzle h-20 w-20 rounded-md flex flex-row justify-center items-center text-4xl', numEmpty, activeBtn]
 
     return (
         <button

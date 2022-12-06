@@ -15,6 +15,6 @@ code {
 @tailwind components;
 @tailwind utilities;
 
-button {
+button, option {
   outline: none;
 }

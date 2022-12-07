@@ -3,10 +3,6 @@ import {OnePuzzle} from "./components/OnePuzzle";
 import {usePuzzleData} from "./hooks/puzzleData";
 import FlipMove from 'react-flip-move'
 
-export interface FlipMoveProps {
-    children?: React.ReactNode
-    className?: string
-}
 function App() {
     const {numbers, sizePuzzle, swapPuzzle, victory, mixPuzzle, changeHandler} = usePuzzleData()
     const classGrid = ['grid gap-3', sizePuzzle === 4 ? 'grid-cols-4' :  'grid-cols-3' ]

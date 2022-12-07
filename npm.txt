@@ -1,0 +1,5 @@
+npm i react-router-dom
+npm i axios
+npx tailwindcss init -p 
+npm install -D tailwindcss postcss autoprefixer
+npx create-react-app --template typescript . 
